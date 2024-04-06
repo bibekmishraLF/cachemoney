@@ -1,0 +1,10 @@
+# update your name in the key path
+# copy this backend file with the name backend.tf
+
+terraform {
+  backend "s3" {
+    bucket = "hackathon-2024-terraform-state"
+    key    = "<yourname>/terraform.tfstate"
+    region = "us-east-1"
+  }
+}

@@ -1,0 +1,26 @@
+# Provide "" if some of the repos doesnot need to be deployed 
+# example of providing empty branch:   fe_branch_name = ""  
+
+cache_money_cli = {
+  fe_repo_name   = "hackathon-FE"
+  fe_branch_name = "dev"
+  be_repo_name   = "hackathon-BE"
+  be_branch_name = ""
+  access_token   = "your_github_access_token"
+}
+
+aws_envs = {
+  AWS_MFA_DEVICE_ARN    = "your MFA ARN"
+  aws_profile           = "hackathon"
+  AWS_ACCESS_KEY_ID     = "Your AWS Access Key"
+  AWS_SECRET_ACCESS_KEY = "Your AWS Secret Key "
+}
+
+fe_env_variables = {
+  default_api_url = "api.bibekmishra.com.np"
+}
+
+be_env_variables = {
+}
+
+
